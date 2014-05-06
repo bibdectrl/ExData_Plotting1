@@ -17,7 +17,7 @@ lines(as.POSIXct(paste(my.data$date, my.data$time)), my.data$sub_metering_3, typ
 legend("topright", lty="solid", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"), box.col = "transparent", bg="transparent")
 
 #graph 4
-plot(xlab="", ylab = "Global_reative_power", x = as.POSIXct(paste(my.data$date, my.data$time), format="%Y-%m-%d %H:%M:%S"), y = my.data$global_reactive_power, type="l")
+plot(xlab="", ylab = "Global_reactive_power", x = as.POSIXct(paste(my.data$date, my.data$time), format="%Y-%m-%d %H:%M:%S"), y = my.data$global_reactive_power, type="l")
 
 
 dev.off()
