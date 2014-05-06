@@ -13,8 +13,8 @@ plot(xlab="datetime", ylab = "Voltage", x = as.POSIXct(paste(my.data$date, my.da
 #graph 3
 plot(as.POSIXct(paste(my.data$date, my.data$time)), my.data$sub_metering_1, type="l", col="black", xlab="", ylab="Energy sub metering")
 lines(as.POSIXct(paste(my.data$date, my.data$time)), my.data$sub_metering_2, type="l", col="red")
-lines(as.POSIXct(paste(my.data$date, my.data$time)), my.data$sub_metering_3, type="l", col="purple")
-legend("topright", lty="solid", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "purple"))
+lines(as.POSIXct(paste(my.data$date, my.data$time)), my.data$sub_metering_3, type="l", col="blue")
+legend("topright", lty="solid", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"), box.col = "transparent", bg="transparent")
 
 #graph 4
 plot(xlab="", ylab = "Global_reative_power", x = as.POSIXct(paste(my.data$date, my.data$time), format="%Y-%m-%d %H:%M:%S"), y = my.data$global_reactive_power, type="l")
